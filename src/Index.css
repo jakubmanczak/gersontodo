@@ -118,6 +118,9 @@ main article {
 	background: var(--task);
 	border-radius: 10px;
 }
+main article.hide {
+	display: none;
+}
 main article.complete {
 	opacity: 0.3;
 }

@@ -123,14 +123,17 @@ const Index = () => {
 						: "- - - - - - - - - - - - - -"}
 				</p>
 				{list
-					.filter((el: task) => {
-						return filter ? !el.complete : true;
-					})
+					// .filter((el: task) => {
+					// 	return filter ? !el.complete : true;
+					// })
 					.map((el: task, index) => {
 						return (
 							<article
 								key={`${el.content}${index}`}
-								className={el.complete ? "complete" : ""}
+								className={`
+									${el.complete ? "complete" : ""}
+									${filter && el.complete ? "hide" : ""}
+								`}
 							>
 								<p>{el.content}</p>
 								<button
