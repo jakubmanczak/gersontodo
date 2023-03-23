@@ -70,10 +70,13 @@ main .controls .newtask {
 main .controls .newtask input {
 	border: none;
 	padding: 8px;
-	border-radius: 4px 0 0 4px;
+	border-radius: 6px 0 0 6px;
 	background: var(--task);
 	color: var(--text);
 	transition-duration: 100ms;
+}
+main .controls .newtask input:hover {
+	box-shadow: inset 0 0 4px rgba(255, 255, 255, 0.2);
 }
 main .controls .newtask input:focus {
 	outline: none;
@@ -82,7 +85,7 @@ main .controls .newtask input:focus {
 main .controls .newtask button {
 	border: none;
 	padding: 8px;
-	border-radius: 0 4px 4px 0;
+	border-radius: 0 6px 6px 0;
 	line-height: 0;
 	cursor: pointer;
 	background: var(--text);
@@ -92,7 +95,7 @@ main .controls .filter {
 }
 main .controls .filter button {
 	border: none;
-	border-radius: 4px 0 0 4px;
+	border-radius: 6px 0 0 6px;
 	padding: 8px;
 	cursor: pointer;
 	line-height: 0;
@@ -101,7 +104,7 @@ main .controls .filter button {
 main .controls .filter p {
 	background: var(--task);
 	padding: 8px 24px;
-	border-radius: 0 4px 4px 0;
+	border-radius: 0 6px 6px 0;
 	cursor: pointer;
 	user-select: none;
 }

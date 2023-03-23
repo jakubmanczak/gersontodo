@@ -36,13 +36,15 @@ const Index = () => {
 			<header>
 				<h1>to-do list</h1>
 				<p>
-					by
+					by @
 					<a href="https://manczak.net" target="_blank">
-						@jakubmanczak
+						jakubmanczak
 					</a>
 				</p>
 				<p className="muted subtitle">
-					Written as a school project. <a href="/">Reset.</a>
+					Written as a school project. <br />
+					Your todo list data is saved in your browser, and is never sent
+					anywhere.
 				</p>
 			</header>
 			<main>
