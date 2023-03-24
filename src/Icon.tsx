@@ -15,9 +15,9 @@ const Icon = ({ icon, ...props }: iconprops) => {
 					viewBox="0 0 24 24"
 					fill="none"
 					stroke="currentColor"
-					stroke-width="2"
-					stroke-linecap="round"
-					stroke-linejoin="round"
+					strokeWidth="2"
+					strokeLinecap="round"
+					strokeLinejoin="round"
 					className="feather feather-check-square"
 				>
 					<polyline points="9 11 12 14 22 4" />
@@ -33,9 +33,9 @@ const Icon = ({ icon, ...props }: iconprops) => {
 					viewBox="0 0 24 24"
 					fill="none"
 					stroke="currentColor"
-					stroke-width="2"
-					stroke-linecap="round"
-					stroke-linejoin="round"
+					strokeWidth="2"
+					strokeLinecap="round"
+					strokeLinejoin="round"
 					className="feather feather-square"
 				>
 					<rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
@@ -50,9 +50,9 @@ const Icon = ({ icon, ...props }: iconprops) => {
 					viewBox="0 0 24 24"
 					fill="none"
 					stroke="currentColor"
-					stroke-width="2"
-					stroke-linecap="round"
-					stroke-linejoin="round"
+					strokeWidth="2"
+					strokeLinecap="round"
+					strokeLinejoin="round"
 					className="feather feather-arrow-right"
 				>
 					<line x1="5" y1="12" x2="19" y2="12" />
@@ -68,9 +68,9 @@ const Icon = ({ icon, ...props }: iconprops) => {
 					viewBox="0 0 24 24"
 					fill="none"
 					stroke="currentColor"
-					stroke-width="2"
-					stroke-linecap="round"
-					stroke-linejoin="round"
+					strokeWidth="2"
+					strokeLinecap="round"
+					strokeLinejoin="round"
 					className="feather feather-x-square"
 				>
 					<rect x="3" y="3" width="18" height="18" rx="2" ry="2" />

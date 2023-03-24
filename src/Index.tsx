@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 // żeby nie było że nie ma komponentów:
 // tutaj komponent z ikonkami.
 // nie widziałem sensu rozdzielać projektu na drobne
@@ -27,10 +27,17 @@ const defaultTasks: task[] = [
 ];
 
 const Index = () => {
-	const [list, setList] = useState<task[]>(defaultTasks);
+	const [list, setList] = useState<task[]>(
+		localStorage.getItem("list")
+			? JSON.parse(localStorage.getItem("list") || "")
+			: defaultTasks
+	);
 	const [filter, setFilter] = useState<boolean>(false);
 	const [messageIndex, setMessageIndex] = useState<number>(0);
 	const inputRef = useRef<HTMLInputElement>(null);
+	useEffect(() => {
+		localStorage.setItem("list", JSON.stringify(list));
+	}, [list]);
 	return (
 		<>
 			<header>
